@@ -354,9 +354,8 @@ int Sound::startInput(void)
 void Sound::end(void)
 {
 #ifdef USE_ALSA
-	if (pcm) snd_pcm_drain(pcm);
+	if (pcm) snd_pcm_drop(pcm);
 #endif /* USE_ALSA */
-	
 	if(notifier) {
 		notifier->setEnabled(false);
 		if(notifier->type()==QSocketNotifier::Read) {
@@ -377,7 +376,6 @@ void Sound::end(void)
 	} else {
 		QTimer::singleShot(1000,this,SLOT(close()));
 	}
-
 #ifdef USE_ALSA
 	if (notifiers)
 		deleteNotifiers();
