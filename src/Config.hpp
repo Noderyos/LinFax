@@ -44,11 +44,13 @@ public:
 	void writeEntry(const QString& key, const QString& value);
 	void writeEntry(const QString& key, bool value);
 	void writeEntry(const QString& key, int value);
+
+    ~Config() {}
+
 private:
-	typedef std::auto_ptr<Config> ConfigPtr;
-	friend class std::auto_ptr<Config>;
+	typedef std::unique_ptr<Config> ConfigPtr;
+	friend class std::unique_ptr<Config>;
 	Config();
-	~Config() {};
 	void setDefault(const QString& key, const char* value);
 	void setDefault(const QString& key, const int value);
 	void setDefault(const QString& key, const bool value);
