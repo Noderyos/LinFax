@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="LinFax" targetName="first" />
+      <config projectName="LinFax" targetName="all" />
+      <config projectName="LinFax" targetName="mocclean" />
+      <config projectName="LinFax" targetName="check" />
+      <config projectName="LinFax" targetName="compiler_rcc_make_all" />
+      <config projectName="LinFax" targetName="install" />
+      <config projectName="LinFax" targetName="qmake_all" />
+      <config projectName="LinFax" targetName="compiler_moc_objc_header_make_all" />
+      <config projectName="LinFax" targetName="compiler_moc_header_make_all" />
+      <config projectName="LinFax" targetName="mocables" />
+      <config projectName="LinFax" targetName="qmake" />
+      <config projectName="LinFax" targetName="benchmark" />
+      <config projectName="LinFax" targetName="compiler_lex_make_all" />
+      <config projectName="LinFax" targetName="compiler_moc_source_make_all" />
+      <config projectName="LinFax" targetName="uninstall" />
+      <config projectName="LinFax" targetName="dist" />
+      <config projectName="LinFax" targetName="LinFax" />
+      <config projectName="LinFax" targetName="compiler_clean" />
+      <config projectName="LinFax" targetName="distclean" />
+      <config projectName="LinFax" targetName="distdir" />
+      <config projectName="LinFax" targetName="compiler_moc_header_clean" />
+      <config projectName="LinFax" targetName="FORCE" />
+      <config projectName="LinFax" targetName="compiler_moc_source_clean" />
+      <config projectName="LinFax" targetName="compiler_lex_clean" />
+      <config projectName="LinFax" targetName="compiler_moc_objc_header_clean" />
+      <config projectName="LinFax" targetName="compiler_uic_clean" />
+      <config projectName="LinFax" targetName="compiler_moc_predefs_clean" />
+      <config projectName="LinFax" targetName="compiler_rcc_clean" />
+      <config projectName="LinFax" targetName="compiler_moc_predefs_make_all" />
+      <config projectName="LinFax" targetName="compiler_yacc_decl_clean" />
+      <config projectName="LinFax" targetName="compiler_yacc_decl_make_all" />
+      <config projectName="LinFax" targetName="compiler_uic_make_all" />
+      <config projectName="LinFax" targetName="compiler_yacc_impl_clean" />
+      <config projectName="LinFax" targetName="compiler_yacc_impl_make_all" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c376bd59-3f17-4a2f-b359-e2fc6053bf76" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/test/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ChangeLog-hamfax" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/NEWS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TODO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/aclocal.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/autom4te.cache/output.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/autom4te.cache/requests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/autom4te.cache/traces.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/config.status" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/configure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/configure.ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/hamfax.desktop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/depcomp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/doc/hamfax.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/doc/hamfax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/install-sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/missing" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/po/hamfax_de.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/po/hamfax_de.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/po/hamfax_fr.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/po/hamfax_fr.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Config.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Config.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/CorrectDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/CorrectDialog.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/DisplayLevel.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/DisplayLevel.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Error.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Error.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxDemodulator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxDemodulator.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxImage.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxImage.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxModulator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxModulator.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxReceiver.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxReceiver.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxTransmitter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxTransmitter.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxWindow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FaxWindow.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/File.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/File.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/FirFilter.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/HelpDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/HelpDialog.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/ImageWidget.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/ImageWidget.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/LookUpTable.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/OptionsDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/OptionsDialog.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/PTC.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/PTC.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/PTT.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/PTT.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/ReceiveDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/ReceiveDialog.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Sound.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Sound.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Spectrum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Spectrum.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/ToolTipFilter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/ToolTipFilter.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/TransmitDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/TransmitDialog.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/config.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/hamfax.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_CorrectDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_DisplayLevel.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_FaxDemodulator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_FaxImage.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_FaxModulator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_FaxReceiver.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_FaxTransmitter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_FaxWindow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_File.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_HelpDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_ImageWidget.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_OptionsDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_PTC.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_ReceiveDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_Sound.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_Spectrum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_ToolTipFilter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/moc_TransmitDialog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/stamp-h1" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/test" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file:///usr/include/x86_64-linux-gnu/qt5/QtCore/qsettings.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MakefileLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="LinFax" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="LinFax" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="2.0.1" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2lgrhOBYh07IsnuFYNYWVgXdfeq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Native Application.all">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FORCE" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="FORCE" CONFIG_NAME="FORCE" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinFax" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="LinFax" CONFIG_NAME="LinFax" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="all" CONFIG_NAME="all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="benchmark" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="benchmark" CONFIG_NAME="benchmark" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="check" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="check" CONFIG_NAME="check" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_clean" CONFIG_NAME="compiler_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_lex_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_lex_clean" CONFIG_NAME="compiler_lex_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_lex_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_lex_make_all" CONFIG_NAME="compiler_lex_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_moc_header_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_moc_header_clean" CONFIG_NAME="compiler_moc_header_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_moc_header_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_moc_header_make_all" CONFIG_NAME="compiler_moc_header_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_moc_objc_header_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_moc_objc_header_clean" CONFIG_NAME="compiler_moc_objc_header_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_moc_objc_header_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_moc_objc_header_make_all" CONFIG_NAME="compiler_moc_objc_header_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_moc_predefs_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_moc_predefs_clean" CONFIG_NAME="compiler_moc_predefs_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_moc_predefs_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_moc_predefs_make_all" CONFIG_NAME="compiler_moc_predefs_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_moc_source_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_moc_source_clean" CONFIG_NAME="compiler_moc_source_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_moc_source_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_moc_source_make_all" CONFIG_NAME="compiler_moc_source_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_rcc_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_rcc_clean" CONFIG_NAME="compiler_rcc_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_rcc_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_rcc_make_all" CONFIG_NAME="compiler_rcc_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_uic_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_uic_clean" CONFIG_NAME="compiler_uic_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_uic_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_uic_make_all" CONFIG_NAME="compiler_uic_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_yacc_decl_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_yacc_decl_clean" CONFIG_NAME="compiler_yacc_decl_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_yacc_decl_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_yacc_decl_make_all" CONFIG_NAME="compiler_yacc_decl_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_yacc_impl_clean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_yacc_impl_clean" CONFIG_NAME="compiler_yacc_impl_clean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="compiler_yacc_impl_make_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="compiler_yacc_impl_make_all" CONFIG_NAME="compiler_yacc_impl_make_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dist" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="dist" CONFIG_NAME="dist" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="distclean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="distclean" CONFIG_NAME="distclean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="distdir" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="distdir" CONFIG_NAME="distdir" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="first" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="first" CONFIG_NAME="first" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="install" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="install" CONFIG_NAME="install" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mocables" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="mocables" CONFIG_NAME="mocables" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mocclean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="mocclean" CONFIG_NAME="mocclean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="qmake" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="qmake" CONFIG_NAME="qmake" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="qmake_all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="qmake_all" CONFIG_NAME="qmake_all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LinFax" TARGET_NAME="uninstall" CONFIG_NAME="uninstall" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Native Application.all" />
+      <item itemvalue="Native Application.benchmark" />
+      <item itemvalue="Native Application.check" />
+      <item itemvalue="Native Application.compiler_clean" />
+      <item itemvalue="Native Application.compiler_lex_clean" />
+      <item itemvalue="Native Application.compiler_lex_make_all" />
+      <item itemvalue="Native Application.compiler_moc_header_clean" />
+      <item itemvalue="Native Application.compiler_moc_header_make_all" />
+      <item itemvalue="Native Application.compiler_moc_objc_header_clean" />
+      <item itemvalue="Native Application.compiler_moc_objc_header_make_all" />
+      <item itemvalue="Native Application.compiler_moc_predefs_clean" />
+      <item itemvalue="Native Application.compiler_moc_predefs_make_all" />
+      <item itemvalue="Native Application.compiler_moc_source_clean" />
+      <item itemvalue="Native Application.compiler_moc_source_make_all" />
+      <item itemvalue="Native Application.compiler_rcc_clean" />
+      <item itemvalue="Native Application.compiler_rcc_make_all" />
+      <item itemvalue="Native Application.compiler_uic_clean" />
+      <item itemvalue="Native Application.compiler_uic_make_all" />
+      <item itemvalue="Native Application.compiler_yacc_decl_clean" />
+      <item itemvalue="Native Application.compiler_yacc_decl_make_all" />
+      <item itemvalue="Native Application.compiler_yacc_impl_clean" />
+      <item itemvalue="Native Application.compiler_yacc_impl_make_all" />
+      <item itemvalue="Native Application.dist" />
+      <item itemvalue="Native Application.distclean" />
+      <item itemvalue="Native Application.distdir" />
+      <item itemvalue="Native Application.first" />
+      <item itemvalue="Native Application.FORCE" />
+      <item itemvalue="Native Application.install" />
+      <item itemvalue="Native Application.LinFax" />
+      <item itemvalue="Native Application.mocables" />
+      <item itemvalue="Native Application.mocclean" />
+      <item itemvalue="Native Application.qmake" />
+      <item itemvalue="Native Application.qmake_all" />
+      <item itemvalue="Native Application.uninstall" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c376bd59-3f17-4a2f-b359-e2fc6053bf76" name="Changes" comment="" />
+      <created>1725612679503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725612679503</updated>
+      <workItem from="1725612681376" duration="2797000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

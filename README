@@ -69,33 +69,9 @@ see file TODO for information on missing features
 Installation:
 *************
 
-hamfax uses automake and autoconf for the build process.  For building
-from a tar ball you don't need them, only if you grab the code from
-the CVS.  The easy way is (after untaring and changing the directory):
+## How to compile
 
-./configure
-make
-make install
+qmake6
+make -j$(nproc)
 
-If you are not compiling from a tar ball, the autotools scripts have to be
-generated first: Check that autotool-dev is installed on your system, then
-run:
-
-autoreconf -f -i
-./configure
-make
-make install
-
-Check the documentation in INSTALL for questions on build options.
-
-If configure fails, check that you have the required software (see
-above) available on your system; especially Qt3 and Qt3's development
-files.  Next check where Qt's files are located and specify the
-locations.  For instance:
-
-./configure --with-Qt-dir=/usr/lib/qt3 --with-Qt-includes=/usr/lib/qt3/include
-
--- 
-73 and have fun :)
-
-Christof, DH1CS
+Noderyos
