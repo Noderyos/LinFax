@@ -27,7 +27,6 @@
 #include <qapplication.h>
 #include <qfont.h>
 #include <QLibraryInfo>
-#include <qtextcodec.h>
 #include <qtranslator.h>
 #include <qstring.h>
 #include "Config.hpp"

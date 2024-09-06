@@ -590,7 +590,7 @@ void FaxWindow::quickSave(void)
 	QDate date=dt.date();
 	QTime time=dt.time();
 	QString name;
-	name.sprintf("%04d-%02d-%02d-%02d-%02d-%02d.png",
+	name.asprintf("%04d-%02d-%02d-%02d-%02d-%02d.png",
 		     date.year(),date.month(),date.day(),
 		     time.hour(),time.minute(),time.second());
 	faxImage->save(name);
@@ -720,7 +720,7 @@ void FaxWindow::initReceptionPtc()
 void FaxWindow::adjustIOC(void)
 {
 	bool ok;
-	int iocNew = QInputDialog::getInteger(this, windowTitle(),
+	int iocNew = QInputDialog::getInt(this, windowTitle(),
 					      tr("Please enter IOC"), ioc,
 					      204, 576, 1, &ok);
 	if(ok) {
@@ -731,7 +731,7 @@ void FaxWindow::adjustIOC(void)
 void FaxWindow::scaleToIOC(void)
 {
 	bool ok;
-	int newIOC = QInputDialog::getInteger(this, windowTitle(),
+	int newIOC = QInputDialog::getInt(this, windowTitle(),
 					      tr("Please enter IOC"), ioc,
 					      204, 576, 1, &ok);
 	if(ok) {
