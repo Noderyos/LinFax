@@ -589,8 +589,7 @@ void FaxWindow::quickSave(void)
 	QDateTime dt=QDateTime::currentDateTime();
 	QDate date=dt.date();
 	QTime time=dt.time();
-	QString name;
-	name.asprintf("%04d-%02d-%02d-%02d-%02d-%02d.png",
+	QString name = QString::asprintf("%04d-%02d-%02d-%02d-%02d-%02d.png",
 		     date.year(),date.month(),date.day(),
 		     time.hour(),time.minute(),time.second());
 	faxImage->save(name);
