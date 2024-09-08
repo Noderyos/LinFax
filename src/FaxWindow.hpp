@@ -154,6 +154,7 @@ private slots:
 
 	// facsimile
 	void setLpm(int l);
+	void setAutosave(int s);
 	void setPhaseLines(int l);
 	void setPhaseInvert(int i);
 	void setColor(int c);

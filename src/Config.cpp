@@ -42,12 +42,14 @@ Config::Config()
 	setDefault("/hamfax/APT/startFrequency",300);
 	setDefault("/hamfax/APT/stopLength",5);
 	setDefault("/hamfax/APT/stopFrequency",450);
-	setDefault("/hamfax/modulation/carrier",1900);
+	setDefault("/hamfax/modulation/carrier",800);
 	setDefault("/hamfax/modulation/deviation",400);
 	setDefault("/hamfax/modulation/filter",1);
 	setDefault("/hamfax/modulation/FM",true);
 	setDefault("/hamfax/fax/color",false);
 	setDefault("/hamfax/fax/LPM",120);
+	setDefault("/hamfax/fax/IOC",288);
+	setDefault("/hamfax/fax/autosave",false);
 	setDefault("/hamfax/phasing/lines",20);
 	setDefault("/hamfax/phasing/invert",false);
 	setDefault("/hamfax/GUI/toolTips",true);

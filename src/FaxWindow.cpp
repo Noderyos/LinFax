@@ -24,7 +24,6 @@
 #include <qapplication.h>
 #include <QFileDialog>
 #include <qstring.h>
-#include <qlayout.h>
 #include <qdatetime.h>
 #include <qfontdialog.h>
 #include <qimage.h>
@@ -35,10 +34,10 @@
 #include <qmessagebox.h>
 #include <qspinbox.h>
 #include <qstatusbar.h>
-#include <qtooltip.h>
 #include <QLabel>
 #include <QCloseEvent>
 #include <cmath>
+#include <qcheckbox.h>
 
 FaxWindow::FaxWindow(const QString& version)
 {
@@ -130,7 +129,8 @@ FaxWindow::FaxWindow(const QString& version)
 	connect(faxImage,SIGNAL(widthAdjust(double)),
 		faxReceiver,SLOT(correctLPM(double)));
 
-	faxImage->create(904,1374);
+	int width = static_cast<int>(Config::instance().readNumEntry("/hamfax/fax/IOC")*M_PI);
+	faxImage->create(width,1374);
 
 	restoreGeometry(Config::instance().value("GUI/geometry").toByteArray());
 	restoreState(Config::instance().value("GUI/windowState").toByteArray());
@@ -237,7 +237,7 @@ void FaxWindow::createToolbars(void)
 	carrier->setMaximum(2400);
 	carrier->setSingleStep(100);
 	carrier->setSuffix(tr("Hz"));
-	carrier->setValue(config.readNumEntry("/linfax/modulation/carrier"));
+	carrier->setValue(config.readNumEntry("/hamfax/modulation/carrier"));
 	carrier->setToolTip(tr("signal carrier for FM and AM"));
 	carrier->installEventFilter(toolTipFilter);
 	connect(carrier,SIGNAL(valueChanged(int)),SLOT(setCarrier(int)));
@@ -350,6 +350,14 @@ void FaxWindow::createToolbars(void)
 	aptStopFreq->setToolTip(tr("frequency of the black/white pattern\n"
 				   "at the end of a facsimile"));
 	aptStopFreq->installEventFilter(toolTipFilter);
+
+	aptTool->addSeparator();
+
+	QCheckBox* autoSave = new QCheckBox("Auto Save");
+	autoSave->setChecked(Config::instance().readBoolEntry("/hamfax/fax/autosave"));
+	connect(autoSave,SIGNAL(stateChanged(int)),SLOT(setAutosave(int)));
+	aptTool->addWidget(autoSave);
+
 
 	addToolBarBreak();
 
@@ -473,6 +481,9 @@ void FaxWindow::endReception(void)
 		disconnect(ptc,SIGNAL(data(int*, int)),
 			   faxReceiver, SLOT(decode(int*, int)));
 		break;
+	}
+	if(Config::instance().readBoolEntry("/hamfax/fax/autosave")) {
+		quickSave();
 	}
 }
 
@@ -724,6 +735,7 @@ void FaxWindow::adjustIOC(void)
 					      204, 576, 1, &ok);
 	if(ok) {
 		faxReceiver->correctWidth(M_PI*iocNew);
+		Config::instance().writeEntry("/hamfax/fax/IOC", iocNew);
 	}
 }
 
@@ -877,14 +889,19 @@ void FaxWindow::setLpm(int l)
 	Config::instance().writeEntry("/hamfax/fax/lpm",l);
 }
 
+void FaxWindow::setAutosave(int s)
+{
+	Config::instance().writeEntry("/hamfax/fax/autosave", s == 2);
+}
+
 void FaxWindow::setPhaseLines(int l)
 {
-	Config::instance().writeEntry("/hamfax/fax/phasing/lines",l);
+	Config::instance().writeEntry("/hamfax/phasing/lines",l);
 }
 
 void FaxWindow::setPhaseInvert(int i)
 {
-	Config::instance().writeEntry("/hamfax/fax/phasing/invert",i);
+	Config::instance().writeEntry("/hamfax/phasing/invert",i);
 }
 
 void FaxWindow::setColor(int c)
