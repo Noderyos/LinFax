@@ -137,11 +137,11 @@ bool FaxImage::save(QString fileName)
 		QString ext = fileName.right(fileName.length() - n - 1).toUpper();
 		if(QImageWriter::supportedImageFormats().contains(ext.toLocal8Bit()))
 			handler = ext;
+	}else {
+		// No valid extension in file name. Try PNG as default.
+		fileName.append(".png");
+		handler = "PNG";
 	}
-
-	// No valid extension in file name. Try PNG as default.
-	fileName.append(".png");
-	handler = "PNG";
 
 	return image.save(fileName,handler.toLocal8Bit());
 }
