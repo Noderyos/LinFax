@@ -825,8 +825,8 @@ void FaxWindow::about(void)
 	QMessageBox::information(
 		this, windowTitle(),
 		tr("linfax is taken from hamfax"
-		   "\nAuthor: Yiyang Wang"
-			 "\n<tonych@protonmail.ch>"
+		   "\nAuthor: Noderyos"
+			 "\n<vincent.bsod@gmail.com>"
 			 "\n\n== hamfax =="
 			 "\n\nhamfax is a Qt application for transmitting and receiving"
 		   "\nham radio facsimiles and weather broadcasts.\n\n"

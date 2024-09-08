@@ -35,7 +35,7 @@
 #define PACKAGE "linfax"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "tonych@protonmail.ch"
+#define PACKAGE_BUGREPORT "vincent.bsod@gmail.com"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "linfax"
