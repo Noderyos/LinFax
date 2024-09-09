@@ -50,6 +50,7 @@ Config::Config()
 	setDefault("/hamfax/fax/LPM",120);
 	setDefault("/hamfax/fax/IOC",288);
 	setDefault("/hamfax/fax/autosave",false);
+	setDefault("/hamfax/fax/autoreceive",false);
 	setDefault("/hamfax/phasing/lines",20);
 	setDefault("/hamfax/phasing/invert",false);
 	setDefault("/hamfax/GUI/toolTips",true);

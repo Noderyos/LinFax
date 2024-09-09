@@ -85,9 +85,6 @@ FaxWindow::FaxWindow(const QString& version)
 	connect(sound,SIGNAL(deviceClosed()),transmitDialog,SLOT(hide()));
 	connect(ptc,SIGNAL(deviceClosed()),transmitDialog,SLOT(hide()));
 	connect(file,SIGNAL(deviceClosed()),transmitDialog,SLOT(hide()));
-	connect(file,SIGNAL(deviceClosed()),SLOT(enableControls()));
-	connect(sound,SIGNAL(deviceClosed()),SLOT(enableControls()));
-	connect(ptc,SIGNAL(deviceClosed()),SLOT(enableControls()));
 	connect(transmitDialog,SIGNAL(cancelClicked()),
 		faxTransmitter,SLOT(doAptStop()));
 
@@ -95,6 +92,7 @@ FaxWindow::FaxWindow(const QString& version)
 	connect(receiveDialog,SIGNAL(skipClicked()),faxReceiver,SLOT(skip()));
 	connect(receiveDialog,SIGNAL(cancelClicked()),
 		faxReceiver,SLOT(endReception()));
+	connect(receiveDialog,SIGNAL(cancelClicked()), SLOT(disableAutoreceive()));
 	connect(sound, SIGNAL(data(short*,int)),
 		receiveDialog, SLOT(samples(short*,int)));
 	connect(file, SIGNAL(data(short*,int)),
@@ -358,6 +356,12 @@ void FaxWindow::createToolbars(void)
 	connect(autoSave,SIGNAL(stateChanged(int)),SLOT(setAutosave(int)));
 	aptTool->addWidget(autoSave);
 
+	aptTool->addSeparator();
+
+	QCheckBox* autoReceive = new QCheckBox("Auto Receive");
+	autoReceive->setChecked(Config::instance().readBoolEntry("/hamfax/fax/autoreceive"));
+	connect(autoReceive,SIGNAL(stateChanged(int)),SLOT(setAutoreceive(int)));
+	aptTool->addWidget(autoReceive);
 
 	addToolBarBreak();
 
@@ -485,6 +489,16 @@ void FaxWindow::endReception(void)
 	if(Config::instance().readBoolEntry("/hamfax/fax/autosave")) {
 		quickSave();
 	}
+}
+
+void FaxWindow::disableAutoreceive(void)
+{
+	disconnect(file,SIGNAL(deviceClosed()), this, SLOT(initReceptionDsp()));
+	disconnect(sound,SIGNAL(deviceClosed()), this, SLOT(initReceptionDsp()));
+	disconnect(ptc,SIGNAL(deviceClosed()), this, SLOT(initReceptionDsp()));
+	connect(file,SIGNAL(deviceClosed()),SLOT(enableControls()));
+	connect(sound,SIGNAL(deviceClosed()),SLOT(enableControls()));
+	connect(ptc,SIGNAL(deviceClosed()),SLOT(enableControls()));
 }
 
 void FaxWindow::closeEvent(QCloseEvent* close)
@@ -672,6 +686,23 @@ void FaxWindow::initTransmitPtc()
 
 void FaxWindow::initReceptionCommon(int interface, int sampleRate)
 {
+
+	if(Config::instance().readBoolEntry("/hamfax/fax/autoreceive")) {
+		disconnect(file,SIGNAL(deviceClosed()), this, SLOT(enableControls()));
+		disconnect(sound,SIGNAL(deviceClosed()), this, SLOT(enableControls()));
+		disconnect(ptc,SIGNAL(deviceClosed()), this, SLOT(enableControls()));
+		connect(file,SIGNAL(deviceClosed()),SLOT(initReceptionDsp()));
+		connect(sound,SIGNAL(deviceClosed()),SLOT(initReceptionDsp()));
+		connect(ptc,SIGNAL(deviceClosed()),SLOT(initReceptionDsp()));
+	}else {
+		disconnect(file,SIGNAL(deviceClosed()), this, SLOT(initReceptionDsp()));
+		disconnect(sound,SIGNAL(deviceClosed()), this, SLOT(initReceptionDsp()));
+		disconnect(ptc,SIGNAL(deviceClosed()), this, SLOT(initReceptionDsp()));
+		connect(file,SIGNAL(deviceClosed()),SLOT(enableControls()));
+		connect(sound,SIGNAL(deviceClosed()),SLOT(enableControls()));
+		connect(ptc,SIGNAL(deviceClosed()),SLOT(enableControls()));
+	}
+
 	this->interface = interface;
 	faxReceiver->init(sampleRate);
 	receiveDialog->aptStart();
@@ -892,6 +923,11 @@ void FaxWindow::setLpm(int l)
 void FaxWindow::setAutosave(int s)
 {
 	Config::instance().writeEntry("/hamfax/fax/autosave", s == 2);
+}
+
+void FaxWindow::setAutoreceive(int s)
+{
+	Config::instance().writeEntry("/hamfax/fax/autoreceive", s == 2);
 }
 
 void FaxWindow::setPhaseLines(int l)

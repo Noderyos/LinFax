@@ -100,6 +100,8 @@ public slots:
 	void slantWaitSecond(void);
 	void enableControls(void);
 	void disableControls(void);
+
+	void disableAutoreceive(void);
 private slots:
 	// from FaxImage
 	void newImageSize(int w, int h);
@@ -155,6 +157,7 @@ private slots:
 	// facsimile
 	void setLpm(int l);
 	void setAutosave(int s);
+	void setAutoreceive(int s);
 	void setPhaseLines(int l);
 	void setPhaseInvert(int i);
 	void setColor(int c);

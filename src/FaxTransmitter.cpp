@@ -64,7 +64,7 @@ void FaxTransmitter::doNext(int n)
 				double pos=std::fmod(sampleNr,lineSamples)
 					/lineSamples;
 				buf[i] = (pos<0.025||pos>=0.975 )
-					? (phaseInvers?0.0:1.0) 
+					? (phaseInvers?0.0:1.0)
 					: (phaseInvers?1.0:0.0);
 				sampleNr++;
 			} else {
